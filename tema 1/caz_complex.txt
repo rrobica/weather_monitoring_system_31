@@ -1,0 +1,30 @@
+A. Pentru un CAZ DE UTILIZARE COMPLEX
+1. Numele cazului de utilizare: Verifică Vremea online
+2. Obiectivul: Permite utilizatorului să obțină datele meteorologice curente și exacte pentru o anumită locație.
+3. Actorii implicați: Utilizator, actor primar.
+4. Precondiții: Sistemul de Monitorizare a Condițiilor Meteorologice trebuie să fie online, iar dispozitivul utilizatorului trebuie să aibă conexiune la internet.
+5. Declanșatoare: Utilizatorul accesează aplicația sau platforma web.
+6. Fluxul de bază:
+
+Utilizatorul deschide platforma online.
+
+Sistemul determină coordonatele geografice ale utilizatorului prin relația include Locație.
+
+Sistemul testează starea echipamentelor hardware prin relația include Verificare Senzori.
+
+Sistemul verifică datele noi prin relația include Actualizare în timp real.
+
+Sistemul afișează utilizatorului starea vremii curente pe ecranul principal.
+7. Fluxuri alternative:
+7.a. Setare manuală a locației: La pasul 2, dacă utilizatorul nu dorește să folosească locația automată, poate introduce manual un oraș în bara de căutare. Fluxul continuă normal de la pasul 3.
+8. Excepții:
+Eroare senzori: La pasul 3, dacă senzorii nu răspund, sistemul întrerupe fluxul și afișează un mesaj de eroare informând că datele meteo nu pot fi preluate momentan.
+9. Punctele de extensie:
+Conform punctelor de extensie definite în interiorul ovalului:
+Vizualizare alerte: La pasul 5, dacă sunt detectate condiții meteo severe, se lansează cazul de utilizare extend Vizualizare Alerte.
+Vizualizare Analiza: La pasul 5, dacă utilizatorul dorește statistici suplimentare și apasă pe butonul aferent, se lansează cazul de utilizare extend Vizualizare Analiza.
+Vizualizare Predictii: La pasul 5, dacă utilizatorul apasă pe butonul de prognoză viitoare, se lansează cazul de utilizare extend Vizualizare Predicții.
+10. Postcondiții: Utilizatorul are pe ecran informațiile meteorologice dorite.
+11. Reguli business: Actualizarea în timp real trebuie să aducă date nu mai vechi de 10 minute.
+12. Note: Interfața trebuie să se încarce în mai puțin de 3 secunde.
+13. Versiune, autor și dată: Versiunea 1.0, Autor Popovici Carlos, Sav Elias, Serban Mihai Robert, Dată 14 Martie 2026.

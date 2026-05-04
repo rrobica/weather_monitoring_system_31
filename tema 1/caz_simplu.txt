@@ -1,0 +1,27 @@
+Pentru un CAZ DE UTILIZARE SIMPLU
+Acesta este un caz derivat, care se concentrează pe o singură acțiune directă.
+
+1. Numele cazului de utilizare: Vizualizare Predicții
+2. Obiectivul: Afișarea prognozei meteorologice pentru următoarele zile în locația curentă.
+3. Actorii implicați: Utilizator, actor primar.
+4. Precondiții: Cazul de utilizare principal Verifică Vremea online a fost executat cu succes, iar locația a fost deja stabilită.
+5. Declanșatoare: Extern. Utilizatorul apasă pe butonul de predicții din interfață.
+6. Fluxul de bază:
+
+Utilizatorul declanșează acțiunea de vizualizare a prognozei.
+
+Sistemul verifică în baza de date modelele de prognoză pentru locația respectivă.
+
+Sistemul formatează datele pentru următoarele zile, incluzând temperaturi minime, maxime și șanse de precipitații.
+
+Sistemul afișează predicția pe ecran.
+7. Fluxuri alternative:
+7.a. Modificare interval: La pasul 4, utilizatorul poate selecta afișarea predicției pe 3 zile în loc de 7 zile. Sistemul filtrează datele și reafișează ecranul.
+8. Excepții:
+Lipsă date de prognoză: La pasul 2, dacă modelele de predicție nu sunt disponibile din cauza unei erori de server, la pasul 4 sistemul afișează un mesaj de indisponibilitate a prognozei.
+9. Punctele de extensie:
+
+10. Postcondiții: Prognoza viitoare este vizibilă pe ecranul utilizatorului.
+11. Reguli business: Predicțiile afișate trebuie să fie calculate pe baza algoritmilor aprobați meteorologic.
+12. Note: Se vor folosi pictograme clare pentru soare, nori sau ploaie pentru a ușura citirea datelor de către utilizator.
+13. Versiune, autor și dată: Versiunea 1.0, Autor: Popovici Carlos, Sav Elias, Serban Mihai Robert, Data 14 Martie 2026.
